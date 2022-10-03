@@ -1,0 +1,144 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("images/back.webp");
+}
+
+#message-container {
+  position: relative;
+}
+.container {
+  position: fixed;
+  margin-top: 30px;
+  width: 40%;
+  left: 130px;
+  max-width: 1200px;
+  height: 652px;
+  border: 3px solid brown;
+  background: white;
+}
+
+#message-container div {
+  background-color: #ccc;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: #fff;
+}
+
+#send-container {
+  margin-bottom: 30px;
+  bottom: 0;
+  background-color: white;
+  max-width: 1200px;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  position: fixed;
+}
+
+#send-button {
+  width: 20%;
+  background-color: lightblue;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+#message-input {
+  flex-grow: 1;
+  background-color: lightgrey;
+  font-size: 18px;
+  padding: 10px;
+}
+.text {
+  position: fixed;
+  right: 91px;
+  top: 145px;
+  padding-top: 120px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+}
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.chat-text {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 80px;
+}
+.chat-text-m {
+  color: white;
+  margin-bottom: 50px;
+  position: absolute;
+  font-size: 22px;
+  top: -82px;
+}
+
+.note {
+  color: red;
+  font-weight: bold;
+}

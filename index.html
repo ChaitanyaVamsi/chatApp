@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="message-container"></div>
+
+      <form id="send-container">
+        <input type="text" placeholder="Enter text" id="message-input" />
+        <button type="submit" id="send-button">Send</button>
+      </form>
+    </div>
+
+    <div class="text">
+      <div class="chat-text-m">
+        Download CORS extension from chrome and enable it if you cannot see
+        messages from eachother. <br /><span class="note">Note:</span> witout
+        cors extension it will not send msgs refer
+        stepsToRunProjWithScreenShots.xls file attached. <br />Give npm install
+        in terminal. <br />Give command 'npm run devStart' in terminal to run
+        server.<br />Refer to readme.txt file for more info.
+      </div>
+      <div class="chat-text">Chat app</div>
+      <div class="wrapper">
+        <div class="static-txt"></div>
+        <ul class="dynamic-txts">
+          <li><span>copy url</span></li>
+          <li><span>paste in new tab</span></li>
+          <li><span>Enter name in prompt</span></li>
+          <li><span>Enjoy chatting</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
