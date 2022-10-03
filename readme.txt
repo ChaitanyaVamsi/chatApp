@@ -2,6 +2,8 @@ do npm install
 
 run the server command in terminal : npm run devStart
 
+please download or refer stepsToRunProjWithScreenShots.xlsx it has instructions with screenshots
+
 in vs code download live server extension
 right click on index.html file there you find option open with live server
 or hold alt and press l and o alt+(l and o) on keyboard
